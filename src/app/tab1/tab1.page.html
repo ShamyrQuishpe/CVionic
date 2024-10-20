@@ -1,0 +1,109 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="center-title">
+      SHAMYR SEBASTIAN QUISHPE CUADRADO
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">CV SHAMYR SEBASTIAN QUISHPE CUADRADO</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>DESARROLADOR DE SOFTWARE</ion-card-title>
+      <ion-card-subtitle>ESCUELA POLITECNICA NACIONAL</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <div class="content-container">
+        <img src="/assets/images/imgcv2.jpg" alt="Foto CV SHAMYR" class="profile-image">
+        <div class="text-content">
+          <ion-card-title class="profile-title">Perfil</ion-card-title>
+          Soy una persona que se adapta fácilmente a cualquier tipo de trabajo,
+          aprendo muy rápido acerca del cargo que se me asigne, me interesa
+          mucho aprender y compartir mis conocimientos.
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Habilidades</ion-card-title>
+    </ion-card-header>
+    <ion-list [inset]="true">
+      <ion-item>
+        <ion-label>Trabajo en equipo</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Manejo de bases de datos SQL Y NoSQL</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Análisis de Datos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Manejo de herramientas para programación Web</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Experiencia Laboral</ion-card-title>
+    </ion-card-header>
+    <ion-list [inset]="true">
+      <ion-item>
+        <h2>Servicio Integrado de Seguridad ECU 911</h2>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+        <h3>Técnico</h3>
+        <p>Tareas realizadas:</p>
+          <p>• Soporte técnico en software y hardware</p>
+          <p>• Colaboración en data center</p>
+          <p>• Configuración de equipos</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <h2>Old Strategic Planning S.A. OSP</h2>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+        <h3>Analista de datos</h3>
+        <p>Tareas realizadas:</p>
+          <p>• Analisis de datos y generación de reportes</p>
+          <p>• Aplicación de Bussines Intelligence</p>
+          <p>• Manejo de metadatos</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-button (click)="downloadPDF()">Descargar PDF</ion-button>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="information-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="showContact('Teléfono: 0999807555')">
+        <ion-icon name="call"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="showContact('Correo: example@yahoo.com')">
+        <ion-icon name="mail"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="showContact('Cédula: 1234567898')">
+        <ion-icon name="id-card"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="showContact('Dirección: Quito-Ecuador')">
+        <ion-icon name="pin"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
