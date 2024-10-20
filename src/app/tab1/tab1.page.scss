@@ -1,0 +1,17 @@
+.content-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .profile-image {
+    margin-right: 16px; /* Espacio entre la imagen y el texto */
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+  }
+  
+  .text-content {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+  }
+.profile-title {
+    margin-bottom: 15px; /* Permite que el texto ocupe el espacio restante */
+  }
