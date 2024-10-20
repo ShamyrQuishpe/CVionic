@@ -15,3 +15,18 @@
 .profile-title {
     margin-bottom: 15px; /* Permite que el texto ocupe el espacio restante */
   }
+
+  ion-label h2 {
+    font-weight: bold;
+  }
+  
+  ion-label h3 {
+    font-style: italic;
+    color: gray; /* Ajusta el color según tu preferencia */
+  }
+  
+  ion-label p {
+    margin: 0.2rem 0; /* Espaciado entre párrafos */
+  }
+  
+  
