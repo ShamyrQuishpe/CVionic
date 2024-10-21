@@ -36,19 +36,19 @@ export class Tab2Page {
   abrirPopup(tipo: string) {
     switch (tipo) {
       case 'document':
-        this.alertHeader = 'Documento';
-        this.alertSubHeader = 'Información sobre documentos';
-        this.alertMessage = 'Aquí puedes gestionar tus documentos.';
+        this.alertHeader = 'Hobbys';
+        this.alertSubHeader = 'Deportes Favoritos';
+        this.alertMessage = 'Futbol, Basket, Futsala, KickBoxing, Boxeo';
         break;
       case 'color-palette':
-        this.alertHeader = 'Paleta de Colores';
+        this.alertHeader = 'Colores Favoritos';
         this.alertSubHeader = 'Selección de colores';
-        this.alertMessage = 'Elige tu paleta de colores preferida.';
+        this.alertMessage = 'Azul, Rojo y Negro';
         break;
       case 'globe':
-        this.alertHeader = 'Información Global';
-        this.alertSubHeader = 'Detalles sobre el mundo';
-        this.alertMessage = 'Accede a información global aquí.';
+        this.alertHeader = 'Lugares';
+        this.alertSubHeader = 'Mis favoritos';
+        this.alertMessage = 'Parques Botanicos, Volcanes, Montañas';
         break;
     }
     this.setOpen(true);

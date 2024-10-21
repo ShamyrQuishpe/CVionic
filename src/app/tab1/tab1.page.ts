@@ -15,13 +15,18 @@ export class Tab1Page {
 
   constructor() {}
 
+
+  visualizarPDF() {
+    window.open('https://drive.google.com/file/d/1dor__xrCpgDaW46es_0AfodVOJaNStN3/view?usp=drive_link', '_blank'); 
+  }
+
   /*downloadPDF(){
     const link = document.createElement('a');
     link.href = 'assets/pdfs/CV_SHAMYRQ_EC.pdf';
     link.click();
   }*/
 
-    downloadPDF() {
+    /*downloadPDF() {
       const pdfUrl = 'assets/pdfs/CV_SHAMYRQ_EC.pdf'; // Ruta a tu archivo PDF
       fetch(pdfUrl)
         .then(response => response.blob())
@@ -34,7 +39,7 @@ export class Tab1Page {
           window.URL.revokeObjectURL(url); // Liberar el objeto URL
         })
         .catch(err => console.error('Error al descargar el PDF', err));
-    }
+    }*/
 
     showContact(contactInfo: string) {
       alert(contactInfo);
