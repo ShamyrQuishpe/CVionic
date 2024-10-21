@@ -1,17 +1,214 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title>Freddy Antonio Villavicencio Rosendo</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-searchbar></ion-searchbar>
+
+  <ion-card id="perfil">
+    <ion-item>
+      <ion-thumbnail slot="start" class="custom-thumbnail">
+        <img src="assets/images/freddycv.JPEG" alt="Foto de Freddy">
+      </ion-thumbnail>
+
+      <ion-label>
+        <ion-card-title>Freddy Villavicencio</ion-card-title>
+        <ion-card-subtitle>Desarrollador de Software</ion-card-subtitle>
+        <ion-card-content>
+          Soy un apasionado desarrollador de software con experiencia en diversas áreas tecnológicas. Actualmente, estoy involucrado en el diseño y desarrollo de soluciones innovadoras para optimizar procesos en el Quito Tennis y Golf Club. Busco siempre aprender y crecer profesionalmente, contribuyendo a proyectos que generen un impacto positivo en la comunidad.
+        </ion-card-content>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-list>
+    <ion-item>
+      <ion-icon aria-hidden="true" name="call" slot="start"></ion-icon>
+      <ion-label>Teléfono</ion-label>
+      <ion-note slot="end">0979103582</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-icon aria-hidden="true" name="mail" slot="start"></ion-icon>
+      <ion-label>Correo Electrónico</ion-label>
+      <ion-note slot="end">frevill02&#64;gmail.com</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-icon aria-hidden="true" name="pin" slot="start"></ion-icon>
+      <ion-label>Ubicación</ion-label>
+      <ion-note slot="end">Real Audiencia, Quito</ion-note>
+    </ion-item>
+  </ion-list>
+
+  <ion-card id="experiencia">
+    <ion-card-header>
+      <ion-card-title>Experiencia Profesional</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+  
+      <!-- Técnico en ECU 911 -->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Técnico de Soporte</ion-card-title>
+          <ion-card-subtitle>ECU 911</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          2024 - Realicé mantenimiento y soporte técnico para equipos de comunicación y emergencias. Asistí en la implementación de soluciones tecnológicas para mejorar la eficiencia operativa, asegurando el funcionamiento ininterrumpido del sistema de emergencias.
+        </ion-card-content>
+      </ion-card>
+
+            <!-- Trabajador en La Salerosa -->
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Mesero</ion-card-title>
+                <ion-card-subtitle>Restaurante La Salerosa</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                2022 - 2023 - Proporcioné un servicio al cliente excepcional, gestionando pedidos y asegurando una experiencia agradable para los comensales. Colaboré en la coordinación de eventos especiales, optimizando la eficiencia del servicio.
+              </ion-card-content>
+            </ion-card>
+  
+      <!-- Desarrollador en Quito Tennis y Golf Club -->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Desarrollador de Software</ion-card-title>
+          <ion-card-subtitle>Quito Tennis y Golf Club</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          2024 - Actualidad - Estoy a cargo del diseño y desarrollo de aplicaciones web para los diferentes departamentos. Trabajo en la implementación de soluciones para el cálculo de totales a pagar por los socios, manejo de usuarios y generación de reportes. Colaboro en el mantenimiento y mejora continua de la infraestructura tecnológica del club.
+        </ion-card-content>
+      </ion-card>
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card id="educacion">
+    <ion-card-header>
+      <ion-card-title>Formación Académica</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Tecnología Superior en Desarrollo de Software</ion-card-title>
+          <ion-card-subtitle>Universidad Politécnica Nacional</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          2024 - Actualidad
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Bachiller</ion-card-title>
+          <ion-card-subtitle>Unidad Educativa Surcos</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          2015 - 2021
+        </ion-card-content>
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card id="habilidades">
+    <ion-card-header>
+      <ion-card-title>Habilidades</ion-card-title>
+    </ion-card-header>
+    <ion-list>
+      <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+        <ion-item>
+          <ion-label>Comunicación Efectiva</ion-label>
+          <ion-reorder slot="end">
+            <ion-icon name="chatbubbles"></ion-icon>
+          </ion-reorder>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>Gestión de Proyectos</ion-label>
+          <ion-reorder slot="end">
+            <ion-icon name="clipboard"></ion-icon>
+          </ion-reorder>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>Desarrollo Ágil</ion-label>
+          <ion-reorder slot="end">
+            <ion-icon name="speedometer"></ion-icon>
+          </ion-reorder>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>Adaptabilidad</ion-label>
+          <ion-reorder slot="end">
+            <ion-icon name="sync"></ion-icon>
+          </ion-reorder>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>Atención al Cliente</ion-label>
+          <ion-reorder slot="end">
+            <ion-icon name="people"></ion-icon>
+          </ion-reorder>
+        </ion-item>
+      </ion-reorder-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-card id="referencias">
+    <ion-card-header>
+      <ion-card-title>Referencias</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Ing. Karina Flores</ion-label>
+          <ion-note slot="end">0985473828</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>Ing. Anderson Cortes</ion-label>
+          <ion-note slot="end">0985473828</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>Ing. Daniel Chulde</ion-label>
+          <ion-note slot="end">0985473828</ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="end">
+  <ion-fab-button>
+    <ion-icon name="chevron-up-circle"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button (click)="abrirPopup('skills')">
+      <ion-icon name="star"></ion-icon>  <!-- Icono para habilidades -->
+    </ion-fab-button>
+    <ion-fab-button (click)="abrirPopup('experience')">
+      <ion-icon name="briefcase"></ion-icon>  <!-- Icono para experiencia laboral -->
+    </ion-fab-button>
+    <ion-fab-button (click)="abrirPopup('education')">
+      <ion-icon name="school"></ion-icon>  <!-- Icono para educación -->
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+<ion-alert
+  [isOpen]="isAlertOpen"
+  [header]="alertHeader"
+  [subHeader]="alertSubHeader"
+  [message]="alertMessage"
+  [buttons]="['OK']"
+  (didDismiss)="setOpen(false)"
+></ion-alert>
+
+<ion-button 
+  expand="full" 
+  color="primary" 
+  shape="round" 
+  (click)="irAGithub()">
+  <ion-icon slot="start" name="logo-github"></ion-icon>
+  Ir a GitHub
+</ion-button>
